@@ -9,6 +9,9 @@
   <li *ngFor="let name of attendees; index as i;">{{i+1}}-> {{name}}</li>
   </ul>
   </div>
+  <div *ngIf="show; else  elseBlock">This is if block</div>
+    <ng-template #elseBlock >This is else block</ng-template>
+
   <!-- <router-outlet></router-outlet> -->
 </div>
 

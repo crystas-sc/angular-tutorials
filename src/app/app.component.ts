@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
    welcomeStr:string ="Welcome to Angular tutorials"; 
-   attendees:string[] = ["Pramod","Manisha","Jenith"]
+   attendees:string[] = ["Pramod","Manisha","Jenith"];
+   show:boolean = false;
 }
 
 
