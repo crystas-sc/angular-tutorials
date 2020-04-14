@@ -9,6 +9,7 @@ export class AppComponent {
   welcomeStr: string = "Welcome to Angular tutorials";
   propertyExpression: string = "propExpression123";
   bindTarget: string = "bindtarget";
+  invalue: string = "";
 
   attendees: string[] = ["Pramod", "Manisha", "Jenith"];
   show: boolean = false;
@@ -20,9 +21,8 @@ export class AppComponent {
     alert("clicked")
   }
 
-  setValue($event){
-    alert($event);
-    console.log($event);
+  setValue(value){
+    console.log(value);
   }
 }
 

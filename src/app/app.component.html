@@ -13,8 +13,10 @@
   2*5= {{2*5}}
   <br/>
 <label>view to source </label>
-<input type="text" (change)="inc()" />
+<input type="text" (c)="setValue($event)" />
 <button (click)="inc()" >clicked</button>
+<input type="text" [(ngModel)]="invalue" />
+{{invalue}}
 
   <br/>
   conditional expression
@@ -35,7 +37,7 @@
 
 
     <div>
-      
+      <div>
       </div>
 
   <!-- <router-outlet></router-outlet> -->
