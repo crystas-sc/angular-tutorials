@@ -1,16 +1,30 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent  {
-   welcomeStr:string ="Welcome to Angular tutorials"; 
-   attendees:string[] = ["Pramod","Manisha","Jenith"];
-   show:boolean = false;
-}
+export class AppComponent {
+  welcomeStr: string = "Welcome to Angular tutorials";
+  propertyExpression: string = "propExpression123";
+  bindTarget: string = "bindtarget";
 
+  attendees: string[] = ["Pramod", "Manisha", "Jenith"];
+  show: boolean = false;
+
+  giveAValue(){
+    return "someValue"+Math.random();
+  }
+  inc (){
+    alert("clicked")
+  }
+
+  setValue($event){
+    alert($event);
+    console.log($event);
+  }
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
