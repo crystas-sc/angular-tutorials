@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { FormsModule } from '@angular/forms';
+import {Counter} from './components/counter'
+
 
 @NgModule({
   imports: [
@@ -20,6 +22,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     TopBarComponent,
+    Counter,
     ProductListComponent
   ],
   bootstrap: [ AppComponent ]

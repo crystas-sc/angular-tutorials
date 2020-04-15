@@ -4,6 +4,19 @@
   <div >
   {{welcomeStr}}
   </div>
+
+<br/>
+<br/>
+<br/>
+<div>
+<app-counter [count]="c" (counterChange)="c=$event" ></app-counter>
+  </div>
+This is parent value{{c}}
+<br/>
+<br/>
+<br/>
+
+
   <label>Property Expression
   <input [value]="propertyExpressionfgdfg" />
   {{propertyExpression}}
@@ -13,10 +26,11 @@
   2*5= {{2*5}}
   <br/>
 <label>view to source </label>
-<input type="text" (c)="setValue($event)" />
+<input type="text" #inpref (keyup.enter)="setValue(inpref.value)" />
+{{viewToSource}}
 <button (click)="inc()" >clicked</button>
 <input type="text" [(ngModel)]="invalue" />
-{{invalue}}
+In value: {{invalue}}
 
   <br/>
   conditional expression
