@@ -9,7 +9,9 @@
 <br/>
 <br/>
 <div>
-<app-counter [count]="c" (counterChange)="c=$event" ></app-counter>
+<app-counter (count)="c" (countChange)="c=$event" ></app-counter>
+<app-counter [(count)]="c"  ></app-counter>
+
   </div>
 This is parent value{{c}}
 <br/>
